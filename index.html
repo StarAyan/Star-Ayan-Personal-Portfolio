@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Star Ayan — FrontEnd Developer</title>
+  <meta name="description" content="Star Ayan is a FrontEnd Developer specializing in HTML5, CSS3, Tailwind CSS v4, JavaScript, TypeScript and React.js. Building responsive, high-performance web experiences.">
+  <meta name="author" content="Star Ayan">
+  <!-- Google Fonts: Poppins (display), Inter (body), JetBrains Mono (code accents) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- ===================== NAVBAR ===================== -->
+  <header class="navbar" id="navbar">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a href="#home" class="nav__logo">
+        <span class="nav__logo-bracket">&lt;</span>FrontEnd Developer<span class="nav__logo-bracket">/&gt;</span>
+      </a>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav__menu" id="navMenu">
+        <li><a href="#home" class="nav__link" data-nav-link>home()</a></li>
+        <li><a href="#skills" class="nav__link" data-nav-link>skills()</a></li>
+        <li><a href="#contact" class="nav__link" data-nav-link>contact()</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ===================== HOME / HERO ===================== -->
+    <section class="hero" id="home">
+      <div class="container hero__grid">
+
+        <div class="hero__content" data-reveal>
+          <p class="eyebrow"><span class="eyebrow__dot"></span> // about_me.tsx</p>
+          <h1 class="hero__heading">About Me</h1>
+
+          <p class="hero__text">
+            I'm Star Ayan, a FrontEnd Developer who turns interface ideas into fast, accessible,
+            production-ready code. My core toolkit is HTML5, CSS3, Tailwind CSS v4, modern
+            JavaScript (ES6+), TypeScript, and React.js — the stack I use to build interfaces
+            that feel considered rather than assembled. I care about the details that separate
+            a good site from a great one: semantic markup, clean component architecture, and
+            layouts that hold up on any screen.
+          </p>
+          <p class="hero__text">
+            Day to day, I build fully responsive websites and modern UI/UX, assemble reusable
+            component libraries, and tune performance so pages load fast and stay smooth. I've
+            shipped landing pages, personal and business portfolios, and full e-commerce storefronts,
+            and I regularly convert Figma designs into pixel-accurate, responsive websites. Every
+            line I write aims to be clean, maintainable, and easy for the next developer to pick up.
+          </p>
+
+          <h2 class="hero__subheading">My Project</h2>
+          <a
+            href="https://star-brand-e-commerce-site.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn--gradient"
+          >
+            <span>View Star Brand E‑Commerce</span>
+            <svg class="btn__icon" width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M7 17L17 7M17 7H9M17 7V15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+
+        <div class="hero__visual" data-reveal>
+          <div class="hero__ring">
+            <div class="hero__photo">
+              <img src="mydp.jpg" alt="Portrait of Star Ayan, FrontEnd Developer" loading="eager">
+            </div>
+          </div>
+          <p class="hero__name">Star Ayan</p>
+        </div>
+
+      </div>
+
+      <a href="#skills" class="scroll-cue" aria-label="Scroll to skills section">
+        <span class="scroll-cue__mouse"><span></span></span>
+      </a>
+    </section>
+
+    <!-- ===================== SKILLS ===================== -->
+    <section class="skills" id="skills">
+      <div class="container">
+        <p class="eyebrow eyebrow--center"><span class="eyebrow__dot"></span> // skills.json</p>
+        <h2 class="section-title">What I Work With</h2>
+        <p class="section-subtitle">A focused stack, sharpened through real projects.</p>
+
+        <div class="skills__grid">
+
+          <article class="skill-card" data-reveal>
+            <div class="skill-card__head">
+              <h3 class="skill-card__name">HTML5</h3>
+              <span class="skill-card__percent" data-target="95">0%</span>
+            </div>
+            <p class="skill-card__desc">Expert in semantic HTML5 structure.</p>
+            <div class="progress" role="progressbar" aria-label="HTML5 proficiency" aria-valuemin="0" aria-valuemax="100" aria-valuenow="95">
+              <div class="progress__bar" data-progress="95"></div>
+            </div>
+          </article>
+
+          <article class="skill-card" data-reveal>
+            <div class="skill-card__head">
+              <h3 class="skill-card__name">CSS3</h3>
+              <span class="skill-card__percent" data-target="92">0%</span>
+            </div>
+            <p class="skill-card__desc">Modern responsive layouts and animations.</p>
+            <div class="progress" role="progressbar" aria-label="CSS3 proficiency" aria-valuemin="0" aria-valuemax="100" aria-valuenow="92">
+              <div class="progress__bar" data-progress="92"></div>
+            </div>
+          </article>
+
+          <article class="skill-card" data-reveal>
+            <div class="skill-card__head">
+              <h3 class="skill-card__name">Tailwind CSS v4</h3>
+              <span class="skill-card__percent" data-target="90">0%</span>
+            </div>
+            <p class="skill-card__desc">Utility-first styling with reusable classes.</p>
+            <div class="progress" role="progressbar" aria-label="Tailwind CSS v4 proficiency" aria-valuemin="0" aria-valuemax="100" aria-valuenow="90">
+              <div class="progress__bar" data-progress="90"></div>
+            </div>
+          </article>
+
+          <article class="skill-card" data-reveal>
+            <div class="skill-card__head">
+              <h3 class="skill-card__name">JavaScript (ES6+)</h3>
+              <span class="skill-card__percent" data-target="88">0%</span>
+            </div>
+            <p class="skill-card__desc">Interactive applications using modern JavaScript.</p>
+            <div class="progress" role="progressbar" aria-label="JavaScript ES6+ proficiency" aria-valuemin="0" aria-valuemax="100" aria-valuenow="88">
+              <div class="progress__bar" data-progress="88"></div>
+            </div>
+          </article>
+
+          <article class="skill-card" data-reveal>
+            <div class="skill-card__head">
+              <h3 class="skill-card__name">TypeScript</h3>
+              <span class="skill-card__percent" data-target="82">0%</span>
+            </div>
+            <p class="skill-card__desc">Type-safe scalable frontend development.</p>
+            <div class="progress" role="progressbar" aria-label="TypeScript proficiency" aria-valuemin="0" aria-valuemax="100" aria-valuenow="82">
+              <div class="progress__bar" data-progress="82"></div>
+            </div>
+          </article>
+
+          <article class="skill-card" data-reveal>
+            <div class="skill-card__head">
+              <h3 class="skill-card__name">React.js</h3>
+              <span class="skill-card__percent" data-target="90">0%</span>
+            </div>
+            <p class="skill-card__desc">Component-based modern web applications.</p>
+            <div class="progress" role="progressbar" aria-label="React.js proficiency" aria-valuemin="0" aria-valuemax="100" aria-valuenow="90">
+              <div class="progress__bar" data-progress="90"></div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <p class="eyebrow eyebrow--center"><span class="eyebrow__dot"></span> // contact.env</p>
+        <h2 class="section-title">Let's Build Something</h2>
+
+        <div class="contact-card" data-reveal>
+          <div class="contact-card__glow"></div>
+
+          <h3 class="contact-card__name">Star Ayan</h3>
+          <p class="contact-card__role">FrontEnd Developer</p>
+
+          <ul class="contact-card__list">
+            <li>
+              <a href="tel:+923414460761" class="contact-card__link">
+                <span class="contact-card__icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <span>+92 341 4460 761</span>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:silentwolf.2k26@gmail.com" class="contact-card__link">
+                <span class="contact-card__icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 4h16v16H4V4z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M4 6l8 7 8-7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <span>silentwolf.2k26@gmail.com</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.tiktok.com/@thesilentwolf.01?_r=1&_t=ZP-97rRLuvsjJm" target="_blank" rel="noopener noreferrer" class="contact-card__link">
+                <span class="contact-card__icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M16.5 3v9.5a3.5 3.5 0 1 1-3.5-3.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M16.5 3a5 5 0 0 0 5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <span>@thesilentwolf.01</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/@SilentWolf.01" target="_blank" rel="noopener noreferrer" class="contact-card__link">
+                <span class="contact-card__icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M21.6 7.2s-.2-1.5-.8-2.2c-.8-.8-1.7-.8-2.1-.9C15.9 4 12 4 12 4h0s-3.9 0-6.7.1c-.4 0-1.3.1-2.1.9-.6.7-.8 2.2-.8 2.2S2.2 9 2.2 10.7v1.6c0 1.7.2 3.5.2 3.5s.2 1.5.8 2.2c.8.8 1.9.8 2.4.9C7.4 20 12 20 12 20s3.9 0 6.7-.1c.4 0 1.3-.1 2.1-.9.6-.7.8-2.2.8-2.2s.2-1.7.2-3.5v-1.6c0-1.7-.2-3.5-.2-3.5z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M10 8.8l5 2.9-5 2.9V8.8z" fill="currentColor"/></svg>
+                </span>
+                <span>@SilentWolf.01</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>&copy; 2026 Star Ayan. All Rights Reserved.</p>
+      <p class="footer__sub">Designed &amp; Developed with <span class="footer__heart">❤</span> using HTML5, CSS3 &amp; JavaScript.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
